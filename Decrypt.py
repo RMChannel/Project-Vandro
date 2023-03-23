@@ -1,9 +1,11 @@
+from PIL import Image
+import numpy as np
 import os
 file=open('decrypt','wb')
-file2=open('b','rb')
-file3=open('c','rb')
-data2=list(file2.read())
-data3=list(file3.read())
+file2=Image.open('b.png','r')
+file3=Image.open('c.png','r')
+data2=list(file2.getdata())
+data3=list(file3.getdata())
 i=1
 extension=[]
 len2=data2[-1]
