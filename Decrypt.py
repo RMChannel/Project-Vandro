@@ -19,7 +19,6 @@ while i<=len2:
     i+=1
 extension=bytes(extension).decode()
 extension=extension[::-1]
-print(extension)
 data=[]
 i=0
 for i in data2:

@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 import os
-path='a.png'
+path='1980089.jpeg'
 extension=os.path.splitext(path)
 extension=extension[1]
 file=open(path,'rb')
