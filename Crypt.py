@@ -17,6 +17,14 @@ extension=list(extension.encode())
 extension.append(len(extension))
 datab+=extension
 datac+=extension
+a=len(datab)-1
+while a>0:
+    if len(datab)%a==0:
+        print(a)
+    a-=1
+print(a)
+datab=np.array_split(datab, 2)
+print(datab)
 arrayb = np.array(datab, dtype=np.int32)
 arrayc = np.array(datac, dtype=np.int32)
 imgb=Image.fromarray(arrayb)
